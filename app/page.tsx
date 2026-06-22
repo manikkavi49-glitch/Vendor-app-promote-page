@@ -108,9 +108,23 @@ export default function Home() {
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className={`relative h-[550px] lg:h-[700px] w-full rounded-[2.5rem] flex items-center justify-center overflow-hidden shadow-2xl ${isDark ? 'bg-gray-900 border border-gray-800 shadow-blue-900/10' : 'bg-white border border-gray-200 shadow-gray-200/50'}`}>
-          <p className="text-gray-500 text-lg px-4 text-center font-medium">[ Product Video / App Mockup Here ]</p>
-        </motion.div>
+<motion.div 
+  initial={{ opacity: 0, x: 30 }} 
+  animate={{ opacity: 1, x: 0 }} 
+  transition={{ duration: 0.8, delay: 0.2 }} 
+  className={`relative h-[550px] lg:h-[700px] w-full rounded-[2.5rem] flex items-center justify-center overflow-hidden shadow-2xl ${isDark ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'}`}
+>
+  <video 
+    className="w-full h-full object-cover" 
+    autoPlay 
+    loop 
+    muted 
+    playsInline
+  >
+    <source src="/Product_Video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</motion.div>
       </section>
 
       {/* 3-Step Setup Section */}
@@ -327,7 +341,7 @@ export default function Home() {
             <a href="#" className={`transition-colors ${isDark ? 'hover:text-white' : 'hover:text-black'}`}>Travelers</a>
             <a href="#" className={`transition-colors ${isDark ? 'hover:text-white' : 'hover:text-black'}`}>Experts</a>
             <Link href="/blog" className={`transition-colors ${isDark ? 'hover:text-white' : 'hover:text-black'}`}>Blog</Link>
-            <a href="#" className={`transition-colors ${isDark ? 'hover:text-white' : 'hover:text-black'}`}>Privacy</a>
+            <Link href="/privacy" className={`transition-colors ${isDark ? 'hover:text-white' : 'hover:text-black'}`}>Privacy</Link>
           </div>
         </div>
       </footer>
