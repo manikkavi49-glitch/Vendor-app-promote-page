@@ -108,23 +108,23 @@ export default function Home() {
           </div>
         </motion.div>
 
-<motion.div 
-  initial={{ opacity: 0, x: 30 }} 
-  animate={{ opacity: 1, x: 0 }} 
-  transition={{ duration: 0.8, delay: 0.2 }} 
-  className={`relative h-[550px] lg:h-[700px] w-full rounded-[2.5rem] flex items-center justify-center overflow-hidden shadow-2xl ${isDark ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'}`}
->
-  <video 
-    className="w-full h-full object-cover" 
-    autoPlay 
-    loop 
-    muted 
-    playsInline
-  >
-    <source src="/Product_Video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</motion.div>
+        <motion.div 
+          initial={{ opacity: 0, x: 30 }} 
+          animate={{ opacity: 1, x: 0 }} 
+          transition={{ duration: 0.8, delay: 0.2 }} 
+          className="relative h-[550px] lg:h-[700px] w-full flex items-center justify-center overflow-hidden"
+        >
+          <video 
+            className="w-full h-full  object-contain" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+          >
+            <source src="/Product_Video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </motion.div>
       </section>
 
       {/* 3-Step Setup Section */}
