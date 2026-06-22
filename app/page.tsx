@@ -87,7 +87,7 @@ export default function Home() {
           </h1>
           
           <p className={`text-lg md:text-xl mb-10 max-w-md ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-            Set up your destination and go. We bring the premium travel experience right to your fingertips. Raahi is your ultimate travel partner.
+            Now ##### ******* Set up your destination and go. We bring the premium travel experience right to your fingertips. Raahi is your ultimate travel partner.
           </p>
 
           <div className="flex flex-col gap-4 max-w-md">
